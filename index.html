@@ -359,21 +359,18 @@
         <div class="fotter-left-container">
           <div class="footer-logo">
             <a href="./index.html" class="logo-footer"
-              ><span class="logo-web">Web</span>Studio</a
-            >
+              ><span class="logo-web">Web</span>Studio</a>
           </div>
           <div class="footer-alladress">
             <address>м. Київ, пр-т Лесі Українки, 26</address>
             <ul class="footer-contact">
               <li>
                 <a href="mailto:info@devstudio.com" class="footer-contacts-item"
-                  >info@devstudio.com</a
-                >
+                  >info@devstudio.com</a>
               </li>
               <li>
                 <a href="tel:+380961111111" class="footer-contacts-item"
-                  >+38 096 111 11 11</a
-                >
+                  >+38 096 111 11 11</a>
               </li>
             </ul>
           </div>
@@ -414,24 +411,22 @@
             </ul>
           </div>
         </div>
-		<div class="footer-subscribe">
+		<form class="footer-subscribe">
 			<div class="email-form">
 			<label for="email">Підпишіться на розсилку</label>
-				<!-- <div class=""> -->
 					<input 
 					type="email" 
 					name="email" 
 					id="email" 
 					placeholder="E-mail" 
 					required>
-				<!-- </div> -->
 			</div>	
-				<button type="submit" class="footer-button">Підписатися
+				<button type="submit" class="footer-button">Підписатися &nbsp;
 					<svg class="footer-svg">
 						<use href="./images/sprite.svg#icon-icon-send"></use>
 					  </svg>
 				</button>
-		</div>
+		</form>
       </div>
     </footer>
 
@@ -477,17 +472,20 @@
 					<label for="comment">Коментар</label>
 					<textarea name="comment" id="comment" cols="20" rows="10" placeholder="Введіть текст"></textarea>
 				</div>
-				<div class="subscribe">
 
+				<div class="subscribe">
 					<input 
 					type="checkbox" 
+					id="agree"
 					name="agree" 
-					value="subscribe"
-					id="agree" 
-					required>
-					<label for="agree">
-						Погоджуюся з розсилкою та приймаю 
-					</label>
+					required/>
+
+					<label for="agree" class="label-agree">
+						<div class="checkbox">
+							<svg>
+								<use href="./images/sprite.svg#icon-Vector"></use>
+							  </svg>
+						</div>Погоджуюся з розсилкою та приймаю  &nbsp;</label>
 					<a href="" class="aferta">Умови договору</a>
 				</div>
 				<div class="form-item">

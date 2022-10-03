@@ -29,10 +29,12 @@ button{
 body,
 footer,
 header,
-main {
+main,
+textarea {
 	font-family: 'Roboto', sans-serif;
 	color: var(--first-text-color);
 	margin: 0;
+	
 }
 
 img {
@@ -247,8 +249,7 @@ img {
 	border-radius: 4px;
 	color: var(--four-text-color);
 	cursor: pointer;
-	transition-duration: 250ms;
-	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-button:hover,
@@ -685,6 +686,8 @@ address {
 	border-radius: 4px;
 	padding: 0;
 	fill: var(--four-text-color);
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition: 250ms;
 }
 
 .footer-button:hover,
@@ -851,6 +854,10 @@ address {
 	pointer-events: none;
 }
 
+.no-scroll{
+	overflow: hidden;
+}
+
 .backdrop.is-hidden .modal{
 	transform: translate(-50%, -50%) scale(0.5);
 	}
@@ -868,6 +875,8 @@ address {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition: 250ms;
 }
 
 .close-button:hover,
@@ -896,16 +905,16 @@ address {
 
 .form-item input{
 	box-sizing:border-box;
-	border: none;
 	border: 1px solid rgba(33, 33, 33, 0.2);
 	width: 100%;
 	height: 40px;
 	border-radius: 4px;
 	padding-left: 42px;
-	
+	transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 textarea{
+	border: 0;
 	border: 1px solid rgba(33, 33, 33, 0.2);
 	border-radius: 4px;
 	width: 450px;
@@ -913,6 +922,11 @@ textarea{
 	box-sizing:border-box;
 	padding: 10px 15px;
 	resize: none;
+	transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-item textarea:focus{
+	border: 1px solid var(--second-text-color);
 }
 
 .input-wrap{
@@ -924,7 +938,7 @@ textarea{
 }
 
 .form-item input:focus{
-	outline: 1px solid var(--second-text-color);
+	border: 1px solid var(--second-text-color);
 }
 
 .form-item label{
@@ -940,16 +954,20 @@ textarea{
 	top: 50%;
 	left: 12px;
 	transform: translateY(-50%);
+	transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-item:focus svg{
-	fill: var(--second-text-color)
+	fill: var(--second-text-color);
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition: 250ms;
 }
 
 .subscribe{
 	margin-top: 20px;
 	height: 25px;
 	display: flex;
+	align-items: center;
 	margin-left: 55px;
 	font-weight: 400;
 	font-size: 14px;
@@ -958,15 +976,53 @@ textarea{
 	color: #757575;
 }
 
+.checkbox{
+	margin-right: 7px;
+	border: 2px solid #212121;
+	border-radius: 3px;
+	width: 16px;
+	height: 15px;
+	display: flex;
+	justify-content: center;
+	box-sizing: border-box;
+	transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscribe input:checked + label .checkbox{
+	background:var(--second-text-color);
+	border: none;
+}
+
+.label-agree{
+	display: flex;
+	align-items: center;
+}
+
 .subscribe p{
 	margin-left: 7px;
+}
+
+.subscribe input{
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	border: 0;
+	padding: 0;
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	margin: -1px;
 }
 
 .aferta{
 	text-decoration: underline;
 	color: var(--second-text-color);
+	margin-left: 2px;
 }
+
 .form-item .hero-button{
+	outline: 0;
 	margin-top: 20px;
 	padding: 0;
 	width: 200px;
@@ -978,10 +1034,12 @@ textarea{
 	line-height: 30px;
 	letter-spacing: 0.06em;
 	background-color: var(--second-text-color);
+	transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-item .hero-button:hover,
 .form-item .hero-button:focus{
 	outline: 1px solid var(--first-text-color);
 	color: var(--four-text-color);
+	
 }

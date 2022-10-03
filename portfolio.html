@@ -288,20 +288,23 @@
 			  </ul>
 			</div>
 		  </div>
-		  <div class="footer-subscribe">
-			  <div class="email-form">
-			  <label for="email">Підпишіться на розсилку</label>
-				  <div class="">
-					  <input type="email" name="email" id="email" placeholder="E-mail">
-				  </div>
-			  </div>	
-			  <button type="submit" class="footer-button">Підписатися
-					  <svg class="footer-svg">
-						  <use href="./images/sprite.svg#icon-icon-send"></use>
-						</svg>
-				  </button>
-		  </div>
-		</div>
-	  </footer>  
+		  <form class="footer-subscribe">
+			<div class="email-form">
+			<label for="email">Підпишіться на розсилку</label>
+					<input 
+					type="email" 
+					name="email" 
+					id="email" 
+					placeholder="E-mail" 
+					required>
+			</div>	
+				<button type="submit" class="footer-button">Підписатися &nbsp;
+					<svg class="footer-svg">
+						<use href="./images/sprite.svg#icon-icon-send"></use>
+					  </svg>
+				</button>
+		</form>
+      </div>
+    </footer>
   </body>
 </html>
