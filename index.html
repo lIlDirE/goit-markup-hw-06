@@ -414,6 +414,24 @@
             </ul>
           </div>
         </div>
+		<div class="footer-subscribe">
+			<div class="email-form">
+			<label for="email">Підпишіться на розсилку</label>
+				<!-- <div class=""> -->
+					<input 
+					type="email" 
+					name="email" 
+					id="email" 
+					placeholder="E-mail" 
+					required>
+				<!-- </div> -->
+			</div>	
+				<button type="submit" class="footer-button">Підписатися
+					<svg class="footer-svg">
+						<use href="./images/sprite.svg#icon-icon-send"></use>
+					  </svg>
+				</button>
+		</div>
       </div>
     </footer>
 
@@ -424,7 +442,59 @@
             <use href="./images/sprite.svg#icon-cross"></use>
           </svg>
         </button>
-      </div>
+			<form>
+				<p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
+				<div class="form-item">
+					<label for="name">Ім'я</label>
+					<div class="input-wrap">
+						<svg width="18px" height="18px">
+							<use href="./images/sprite.svg#icon-person-black" width="24px" height="24px"></use>
+						</svg>
+							<input type="text" name="user" id="name">
+						</div>
+				</div>
+				<div class="form-item">
+					<label for="tel">Телефон</label>
+					<div class="input-wrap">
+					<svg width="18px" height="18px">
+						<use href="./images/sprite.svg#icon-phone"></use>
+					  </svg>
+					  <input type="tel" name="phone_number" id="tel">
+					</div>
+					
+				</div>
+				<div class="form-item">
+					<label for="email">Пошта</label>
+					<div class="input-wrap">
+						<svg width="18px" height="18px">
+							<use href="./images/sprite.svg#icon-mail-black"></use>
+						  </svg>
+						  <input type="email" name="email" id="email">
+						</div>
+					
+				</div>
+				<div class="form-item">
+					<label for="comment">Коментар</label>
+					<textarea name="comment" id="comment" cols="20" rows="10" placeholder="Введіть текст"></textarea>
+				</div>
+				<div class="subscribe">
+
+					<input 
+					type="checkbox" 
+					name="agree" 
+					value="subscribe"
+					id="agree" 
+					required>
+					<label for="agree">
+						Погоджуюся з розсилкою та приймаю 
+					</label>
+					<a href="" class="aferta">Умови договору</a>
+				</div>
+				<div class="form-item">
+					<button type="submit" class="hero-button">Відправити</button>
+				</div>
+			</form>	
+		</div>
     </div>
     <script src="./js/modal.js"></script>
   </body>
